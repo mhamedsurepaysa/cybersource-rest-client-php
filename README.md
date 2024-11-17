@@ -29,7 +29,7 @@ override the new secure-http default setting)*.
 {
   "require": {
     "php": ">=7.4.0", 
-    "cybersource/rest-client-php": "0.0.56"
+    "surepay/cybersource-rest-client-php": "0.0.56"
   }
 }
 ```
@@ -95,8 +95,8 @@ Since v0.0.24, a new logging framework has been introduced in the SDK. This new 
 
 More information about this new logging framework can be found in this file : [Logging.md](Logging.md)
 
-[packagist_badge]: https://img.shields.io/packagist/v/cybersource/rest-client-php.svg
-[packagist]: https://packagist.org/packages/cybersource/rest-client-php
+[packagist_badge]: https://img.shields.io/packagist/v/surepay/cybersource-rest-client-php.svg
+[packagist]: https://packagist.org/packages/surepay/cybersource-rest-client-php
 
 ## Features
 
