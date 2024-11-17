@@ -226,13 +226,13 @@ class ReportingV3RetrievalDetailsGet200ResponseRetrievalDetails implements Array
 
     /**
      * Associative array for storing property values
-     * @var mixed[]
+     * @var
      */
     protected $container = [];
 
     /**
      * Constructor
-     * @param mixed[] $data Associated array of property values initializing the model
+     * @param  $data Associated array of property values initializing the model
      */
     public function __construct(array $data = null)
     {
@@ -751,7 +751,6 @@ class ReportingV3RetrievalDetailsGet200ResponseRetrievalDetails implements Array
      * @param  integer $offset Offset
      * @return boolean
      */
-    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
         return isset($this->container[$offset]);
@@ -760,9 +759,8 @@ class ReportingV3RetrievalDetailsGet200ResponseRetrievalDetails implements Array
     /**
      * Gets offset.
      * @param  integer $offset Offset
-     * @return mixed
+     * @return
      */
-    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         return isset($this->container[$offset]) ? $this->container[$offset] : null;
@@ -771,10 +769,9 @@ class ReportingV3RetrievalDetailsGet200ResponseRetrievalDetails implements Array
     /**
      * Sets value based on offset.
      * @param  integer $offset Offset
-     * @param  mixed   $value  Value to be set
+     * @param     $value  Value to be set
      * @return void
      */
-    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
         if (is_null($offset)) {
@@ -789,7 +786,6 @@ class ReportingV3RetrievalDetailsGet200ResponseRetrievalDetails implements Array
      * @param  integer $offset Offset
      * @return void
      */
-    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
         unset($this->container[$offset]);

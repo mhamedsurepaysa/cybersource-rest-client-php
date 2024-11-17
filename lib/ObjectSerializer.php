@@ -43,7 +43,7 @@ class ObjectSerializer
     /**
      * Serialize data
      *
-     * @param mixed  $data   the data to serialize
+     * @param  $data   the data to serialize
      * @param string $type   the SwaggerType of the data
      * @param string $format the format of the Swagger type of the data
      *
@@ -217,7 +217,7 @@ class ObjectSerializer
     /**
      * Deserialize a JSON string into an object
      *
-     * @param mixed    $data          object or primitive to be deserialized
+     * @param    $data          object or primitive to be deserialized
      * @param string   $class         class name is passed as a string
      * @param string[] $httpHeaders   HTTP headers
      * @param string   $discriminator discriminator if polymorphism is used
@@ -261,7 +261,7 @@ class ObjectSerializer
             } else {
                 return null;
             }
-        } elseif (in_array($class, ['DateTime', 'bool', 'boolean', 'byte', 'double', 'float', 'int', 'integer', 'mixed', 'number', 'object', 'string', 'void'], true)) {
+        } elseif (in_array($class, ['DateTime', 'bool', 'boolean', 'byte', 'double', 'float', 'int', 'integer', 'number', 'object', 'string', 'void'], true)) {
             settype($data, $class);
             return $data;
         } elseif ($class === '\SplFileObject') {

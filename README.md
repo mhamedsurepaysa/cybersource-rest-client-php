@@ -9,7 +9,7 @@ The CyberSource PHP client provides convenient access to the [CyberSource REST A
 
 ## System Requirements
 
-* PHP 8.0.0+
+* PHP 7.4+
 * cURL PHP Extension
 * JSON PHP Extension
 * OpenSSL PHP Extension
@@ -28,7 +28,7 @@ override the new secure-http default setting)*.
 ```json
 {
   "require": {
-    "php": ">=8.0.0", 
+    "php": ">=7.4.0", 
     "cybersource/rest-client-php": "0.0.56"
   }
 }

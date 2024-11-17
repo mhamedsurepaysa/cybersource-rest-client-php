@@ -209,7 +209,6 @@ class ApiClient
      * @param string $endpointPath path to method endpoint before expanding parameters
      *
      * @throws \CyberSource\ApiException on a non 2xx response
-     * @return mixed
      */
     public function callApi($resourcePath, $method, $queryParams, $postData, $headerParams, $responseType = null, $endpointPath = null)
     {
